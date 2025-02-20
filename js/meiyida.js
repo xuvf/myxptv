@@ -183,7 +183,7 @@ async function search(ext) {
     let cards = []
 
     // URL编码搜索文本
-    text = encodeURIComponent(ext.text)
+    let text = encodeURIComponent(ext.text)
     let url = appConfig.site + `vodsearch/-------------.html?wd=${text}`
 
     // 获取搜索结果页面

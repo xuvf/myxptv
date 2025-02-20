@@ -179,7 +179,7 @@ async function getPlayinfo(ext) {
 
 // 搜索功能实现
 async function search(ext) {
-    ext = JSON.parse(ext)
+    ext = argsify(ext)
     let cards = []
 
     // URL编码搜索文本

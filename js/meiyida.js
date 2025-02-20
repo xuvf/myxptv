@@ -178,11 +178,12 @@ async function getPlayinfo(ext) {
 }
 
 // 搜索功能实现
-async function search(text) {
+async function search(ext) {
+    ext = JSON.parse(ext)
     let cards = []
 
     // URL编码搜索文本
-    text = encodeURIComponent(text)
+    text = encodeURIComponent(ext.text)
     let url = appConfig.site + `vodsearch/-------------.html?wd=${text}`
 
     // 获取搜索结果页面

@@ -184,13 +184,16 @@ async function search(ext) {
 
     // URL编码搜索文本
     let text = encodeURIComponent(ext.text)
+
+
+    
     let page = ext.page || 1
     if (page > 1) {
       return JSON.stringify({
         list: cards,
       })
     }
-    
+
     let url = appConfig.site + `vodsearch/-------------.html?wd=${text}`
 
     // 获取搜索结果页面

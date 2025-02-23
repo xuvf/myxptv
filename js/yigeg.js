@@ -2,12 +2,12 @@
 const cheerio = createCheerio()
 // 设置User Agent，模拟iPhone浏览器
 const UA = 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Mobile/15E148 Safari/604.1'
-const mainUrl = 'https://www.mydys3.com/'
+const mainUrl = 'https://ygg01.com/'
 
 // 应用配置对象，包含版本、标题、网站和导航标签
 let appConfig = {
     ver: 1,
-    title: '美益达',
+    title: '一个G',
     site: mainUrl,
     tabs: [{
         name: '电影',  // 首页标签
